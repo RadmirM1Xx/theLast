@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "inter";
+  src: url("Inter-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "zekton";
+  src: url("Zekton.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "bowler";
+  src: url("Bowler.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "rubik";
+  src: url("Rubik.ttf");
+  font-style: normal;
+  font-weight: bold;
+}

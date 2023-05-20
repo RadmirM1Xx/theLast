@@ -1,0 +1,383 @@
+$darkBg: #231839;
+$lightBg: #FFFFFF;
+
+$darkF: #281E3A;
+$lightF: #BFBFBF;
+
+$darkS: #322745;
+$lightS: #999999;
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+
+  .mobile_header {
+    display: none;
+  }
+
+  body header {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 80%);
+    height: 100vh;
+    background: $darkF;
+  }
+
+  body header .header_fixed {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: calc(100% - 80%);
+    height: 100vh;
+    background: $darkF;
+  }
+
+  body header .logo {
+    display: flex;
+    width: 100%;
+  }
+
+  body header .logo .logo__img {
+    margin: 10px;
+    width: calc(100% - 75%);
+  }
+
+  body header .logo .logo__img img {
+    width: 100%;
+  }
+
+  body header .logo .name {
+    display: flex;
+    width: calc(100% - 25%);
+    align-items: center;
+    justify-content: start;
+    font-family: rubik;
+    font-size: 2vw;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  body header .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 78vh;
+    margin-top: 10%;
+  }
+
+  body header .nav .button {
+    display: flex;
+    width: 100%;
+    position: relative;
+    color: #FFFFFF;
+    font-family: bowler;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 15px 0;
+    transition: .2s;
+  }
+
+  body header .nav .button .button__line {
+    position: absolute;
+    display: block;
+  }
+
+  body header .nav .button .button__line--top {
+    top: 0;
+    margin-right: 200%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white);
+  }
+
+  .button:hover .button__line--top {
+    margin-left: 400%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+
+  body header .nav .button .button__line--bottom {
+    bottom: 0;
+    margin-left: 200%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, white);
+  }
+
+  .button:hover .button__line--bottom {
+    margin-right: 400%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+
+  body header .nav .button .button__line--left {
+    margin-top: 200%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, white);
+  }
+
+  .button:hover .button__line--left {
+    margin-bottom: 400%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+
+  body header .nav .button .button__line--right {
+    margin-bottom: 200%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+  }
+
+  .button:hover .button__line--right {
+    margin-top: 400%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+
+  .button:hover {
+    box-shadow: 0 0 10px white;
+    transition: 1s;
+    transition-delay: 1s;
+  }
+
+  .button:not(:first-child) {
+    margin-top: 5%;
+  }
+
+  body .container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20%);
+    background: $darkBg;
+    padding-left: calc (100% - 80%);
+  }
+
+  body .container .zag {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  body .container .window {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5vh 0;
+  }
+
+  body .container .window .dark_window {
+    width: 45vw;
+    height: 45vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: black;
+    border-radius: 20px;
+  }
+
+  body .container .window .dark_window .game_window img {
+    width: 45vw;
+    height: 45vh;
+    opacity: 40%;
+    border-radius: 20px;
+    transition: 1s;
+  }
+
+  body .container .window .dark_window:hover .game_window img {
+    opacity: 100%;
+  }
+
+  body .container .zag {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  body .container .zag p {
+    font-family: rubik;
+    font-size: 2.3em;
+    color: #FFFFFF;
+  }
+
+  body .container .info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  body .container .info_first {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body .container .info_first .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  body .container .info_first .image img {
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  body .container .info_first .info_text {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background: $darkF;
+    border-radius: 20px;
+  }
+
+  body .container .info_first .info_text p {
+    color: #FFFFFF;
+    font-family: rubik;
+  }
+
+  body .container .info_second {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 5em;
+    border-radius: 20px;
+    width: 30%;
+    background-color: rgba(75, 68, 87, 0.3);
+  }
+
+  body .container .info_second p {
+    width: 100%;
+    color: white;
+    font-size: 19px;
+    font-family: zekton;
+  }
+
+
+
+@media only screen and (max-width: 992px)  {
+  .pc_header {
+    display: none;
+  }
+
+  .mobile_header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: fixed;
+    background: $darkS;
+    z-index: 1000;
+  }
+
+  .menu-menu {
+    display: block;
+  }
+
+  .menu-list li {
+    margin-bottom: 1.4em;
+  }
+
+  .menu-list li a {
+    display: block;
+    font-family: bowler;
+    font-size: 20px;
+  }
+
+  .mobile_header .m-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile_header .m-logo .burger_menu .open {
+    height: 32px;
+    width: 32px;
+  }
+
+  .mobile_header .m-logo .burger_menu .open img {
+    height: 32px;
+    width: 32px;
+    padding-right: 10px;
+  }
+
+  .mobile_header .m-logo .burger_menu .close {
+    height: 32px;
+    width: 32px;
+    padding-right: 10px;
+  }
+
+  .mobile_header .m-logo .burger_menu .close img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: $darkS;
+  }
+
+  .menu-list li a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .mobile_header .m-logo .m-img-logo img {
+    width: 64px;
+    height: auto;
+  }
+
+  .mobile_header .m-logo .m-name {
+    font-size: 1.5em;
+    font-family: rubik;
+    color: #FFFFFF;
+  }
+
+  body .container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: $darkBg;
+    padding-left: 0;
+  }
+
+  body .container .window .dark_window {
+    width: 60vw;
+    height: 25vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: black;
+    border-radius: 20px;
+  }
+
+  body .container .window .dark_window .game_window img {
+    width: 60vw;
+    height: 25vh;
+    opacity: 40%;
+    border-radius: 20px;
+  }
+
+
+
+}
